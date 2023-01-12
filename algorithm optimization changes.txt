@@ -1,0 +1,28 @@
+algorithm optimization changes:
+
+- removed the 'player_spawn' function
+	- found it unnessicary to have the player spawn in a random area each iteration
+	- still intended for the player to drop from the air as the small delay worked as 	 	  makeshift transistion
+
+- removed horizontonal collision check
+	- this type of game does not include barriers or hills the player would need to 	  	jump over, therefore the check is not needed
+
+- SFX for attack and shoot moved to object methods in order to be applied to both enemy and fighter
+
+- (removed the co-op. Add it in evaluation as a future bonus feature)
+
+
+
+Bug Fixes:
+- added the condition that the idle animation couldn't play mid air (stops enimies from standing still while falling)
+
+
+
+QoL improvements:
+
+- increased the damaged dealt by player shooting (from 20 to 50)
+- increased the damaged dealt by enemy shooting (from 5 default to 7 after 15 points)
+- changed attack and shoot key from space/up to i/j for a better UX
+
+
+- - NOTE: FIGURE OUT IF REMOVING USERNAME LIST VARIABLE
